@@ -24,16 +24,16 @@
           font-size: 3.5rem;
         }
       }
-      @page {
-  size: A4;
-  margin: 0;
-}
-@media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
-  }
-}
+	  
+	  
+	  
+.list-item { padding-bottom: 20px; }
+.list-image { float: right; margin-right: 20px; width: 320px; overflow: hidden; }
+.list-item img { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+.list-item:hover img { -webkit-transform: scale(0.9); -moz-transform: scale(0.9); -ms-transform: scale(0.9); -o-transform: scale(0.9); transform: scale(0.9); }
+.list-info h5 { font-size: 16px; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
+
+
     </style>
 
     
@@ -84,7 +84,7 @@
       title : "GIRO 555",
       url: "https://giro555.nl/actions/oekraine/",
       qrimg: "qr/giro555.png",
-      descr: ""
+      descr: "De mensen uit Oekraïne hebben dringend hulp nodig. Honderdduizenden mensen zijn op de vlucht. Gezinnen zijn van elkaar gescheiden. Zij leven in angst en onzekerheid maar wij kunnen helpen. Met voeding, onderdak, medische zorg en schoon drinkwater. Jij kunt ook helpen. Samen in actie voor Oekraïne. Geef jij ook?"
     },
     {
       title : "INTERNATIONAL COMMITTEE OF THE RED CROSS",
@@ -97,24 +97,48 @@
   ];
 
     var str = data.map(function(v){
-      return `<hr class="col-3 col-md-2 mb-5 d-print-none"/>
-      <div class="row">
+      return `
+     <!-- <hr class="col-3 col-md-2 mb-5 d-print-none"/><div class="row">
       <div class="row flex-lg-row-reverse align-items-center g-1 py-1">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-lg-6">
           <img src="${v.qrimg}" class="d-block mx-lg-auto img-fluid" width="300" height="300">
         </div>
         <div class="col-lg-6">
           <h2>${v.title}</h2>
           <h4><a href="${v.url}" target="_blank">${v.url}</a></h4>
-          <p class="lead">${v.descr}</p>
+          <p class="lead"> <blockquote class="blockquote mb-4">
+                              <p>
+                                <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                                <span class="font-italic">${v.descr}</span>
+                              </p>
+                            </blockquote></p>
         </div>
       </div>
-    </div>
-    `;
-    });
-    document.getElementById('links').innerHTML = str;
-    </script>
+    </div>-->
+	
+	
+	<div class="row">
+        <div class="col-sm-12 border rounded mb-4">
+            <div class="list-item ">
+                <div class="list-image">
+                    <a target="_blank" href="${v.url}"><!--${v.qrimg}-->
+                        <img src="${v.qrimg}" alt="${v.title}" width="300" height="300"></a>
+                </div>
+                <div class="list-info align-items-stretch">
 
+                    <h3><a target="_blank" href="${v.url}">${v.title}</a></h3> 
+					<p>${v.descr}</p>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	`;
+    });
+    document.getElementById('links').innerHTML = str.join("");
+    </script>
+	
   </main>
 </div>
 
@@ -124,4 +148,3 @@
       
   </body>
 </html>
-
