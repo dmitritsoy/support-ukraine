@@ -1,32 +1,14 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Starter Template · Bootstrap v5.0</title>
+    <title>Support-Ukraine.nl</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
-
-    
-
-    <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-print-css/css/bootstrap-print.min.css" media="print">
-
-<meta name="theme-color" content="#7952b3">
-
 
     <style>
       .bd-placeholder-img {
@@ -51,58 +33,87 @@
     width: 210mm;
     height: 297mm;
   }
-  /* ... the rest of the rules ... */
 }
     </style>
 
     
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
   </head>
   <body>
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-      <span class="fs-4">Starter template</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/510px-Flag_of_Ukraine.svg.png"  class="me-2"  width="40" height="32">
+      <span class="fs-4">Support-Ukraine.nl</span>
     </a>
   </header>
 
   <main>
-    <h1 class="d-print-none">Get started with Bootstrap</h1>
-    <p class="fs-5 col-md-8 d-print-none" >Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+    <p class="fs-5 col-md-8 d-print-none">
+      We have been regularly asked by friends and acquaintances about the best ways to support Ukraine and Ukrainian people in the war. <br>
+      We have therefore collected the list of trustful non-commercial organizations where one can donate money, medications, humanitarian goods or provide other forms of support.<br>
+      We are not affiliated with any of the below mentioned organizations, neither we receive any contributions from them. We ask you to conduct your own research and make your own decisions.
+    </p>
 
     <div class="mb-5 d-print-none">
-      <a href="#" onclick="print()" class="btn btn-primary btn-lg px-4">Download examples</a>
+      <a href="#" onclick="print()" class="btn btn-primary btn-lg px-4">Print</a>
     </div>
     
-    <hr class="col-3 col-md-2 mb-5 d-print-none">
+<links id="links"></links>
+    <script>
+    var data = [
+    {
+      title : "Stichting Oekraïners in Nederland",
+      url: "https://www.ukrainians.nl/",
+      qrimg: "qr/ukrainians.nl.png",
+      descr: "Ukrainians in the Netherlands Foundation (Stichting Oekraïners in Nederland) is a non-profit platform established in 2014 to support the needs of the Dutch Ukrainian diaspora, provide humanitarian aid to Ukraine, particularly in the occupied territories. Our foundation works closely with the Ukrainian Embassy in the Netherlands."
+    },
+    {
+      title : "Helping to Leave",
+      url: "https://helpingtoleave.org/en",
+      qrimg: "qr/helpingtoleave.png",
+      descr: "Helping to Leave is an independent grassroots project supporting people who are in the process of leaving Ukraine, as well as those currently in the country and in need of help."
+    },
+    {
+      title : "Come back alive",
+      url: "https://www.comebackalive.in.ua/",
+      qrimg: "qr/comebackalive.png",
+      descr: "Defending Ukraine Together"
+    },
+    {
+      title : "GIRO 555",
+      url: "https://giro555.nl/actions/oekraine/",
+      qrimg: "qr/giro555.png",
+      descr: ""
+    },
+    {
+      title : "INTERNATIONAL COMMITTEE OF THE RED CROSS",
+      url: "https://www.icrc.org/en/donate/ukraine",
+      qrimg: "qr/redcross.png",
+      descr: "As the security situation allows, the ICRC is responding to urgent humanitarian needs and must be able to continue their life saving work. ICRC water engineers and doctors aim to help more than 3 million people access clean water and improve the living conditions of more than 66,000 whose homes have been damaged by heavy fighting."
+    }
+    
+    
+  ];
 
-    <!-- <div class="row g-5">
-      <div class="col-md-12">
-        <h2>Starter projects</h2>
-        <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-        <ul class="icon-list">
-          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
-          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
-        </ul>
-      </div>
-    </div> -->
-
-    <div class="row">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    var str = data.map(function(v){
+      return `<hr class="col-3 col-md-2 mb-5 d-print-none"/>
+      <div class="row">
+      <div class="row flex-lg-row-reverse align-items-center g-1 py-1">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="qr/6f9295597bcbd7b1b237f59389194f7d.png" class="d-block mx-lg-auto img-fluid" width="300" height="300" loading="lazy">
+          <img src="${v.qrimg}" class="d-block mx-lg-auto img-fluid" width="300" height="300">
         </div>
         <div class="col-lg-6">
-          <h2>Stichting Oekraïners in Nederland</h2>
-          <h4>https://www.ukrainians.nl/</h4>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-
+          <h2>${v.title}</h2>
+          <h4><a href="${v.url}" target="_blank">${v.url}</a></h4>
+          <p class="lead">${v.descr}</p>
         </div>
       </div>
     </div>
+    `;
+    });
+    document.getElementById('links').innerHTML = str;
+    </script>
 
   </main>
 </div>
