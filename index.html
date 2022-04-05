@@ -1,144 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Support-Ukraine.nl</title>
-<link rel="icon" 
-      type="image/png" 
-      href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/510px-Flag_of_Ukraine.svg.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-print-css/css/bootstrap-print.min.css" media="print">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-	  links>div:nth-child(4n)
-	  {
-		page-break-after: always;
-	  }
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Support-Ukraine.nl</title>
+      <link rel="icon" 
+         type="image/png" 
+         href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/510px-Flag_of_Ukraine.svg.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-print-css/css/bootstrap-print.min.css" media="print">
+      <style>
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+         links>div:nth-child(4n)
+         {
+         page-break-after: always;
+         }
+         .list-item { padding-bottom: 20px; }
+         .list-image { float: right; margin-right: 20px; width: 320px; overflow: hidden; }
+         .list-item img { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+         .list-info h5 { font-size: 16px; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
+      </style>
 	  
-.list-item { padding-bottom: 20px; }
-.list-image { float: right; margin-right: 20px; width: 320px; overflow: hidden; }
-.list-item img { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
-
-.list-info h5 { font-size: 16px; font-weight: normal; margin-top: 0; margin-bottom: 20px; }
-
-
-    </style>
-
-    
-  </head>
-  <body>
-    
-<div class="col-lg-8 mx-auto p-3 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/510px-Flag_of_Ukraine.svg.png"  class="me-2"  width="40" height="32">
-      <span class="fs-4">Support-Ukraine.nl</span>
-    </a>
-  </header>
-
-  <main>
-    <p class="fs-5 col-md-8 d-print-none">
-      We have been regularly asked by friends and acquaintances about the best ways to support Ukraine and Ukrainian people in the war. <br>
-      We have therefore collected the list of trustful non-commercial organizations where one can donate money, medications, humanitarian goods or provide other forms of support.<br>
-      We are not affiliated with any of the below mentioned organizations, neither we receive any contributions from them. We ask you to conduct your own research and make your own decisions.
-    </p>
-
-    <div class="mb-5 d-print-none">
-      <a href="#" onclick="print()" class="btn btn-primary btn-lg px-4">Print</a>
-    </div>
-    
-<links id="links"></links>
-    <script>
-    var data = [
-    {
-      title : "Stichting Oekraïners in Nederland",
-      url: "https://www.ukrainians.nl/",
-      qrimg: "qr/ukrainians.nl.png",
-      descr: "Ukrainians in the Netherlands Foundation (Stichting Oekraïners in Nederland) is a non-profit platform established in 2014 to support the needs of the Dutch Ukrainian diaspora, provide humanitarian aid to Ukraine, particularly in the occupied territories. Our foundation works closely with the Ukrainian Embassy in the Netherlands."
-    },
-	{
-      title : "Rijksoverheid: hulp aan vluchtelingen uit Oekraïne",
-      url: "https://www.rijksoverheid.nl/onderwerpen/opvang-vluchtelingen-uit-oekraine/wat-kan-ik-doen",
-      qrimg: "qr/rijksoverheid.png",
-      descr: "Veel Nederlanders willen een bijdrage leveren om vluchtelingen uit Oekraïne te helpen. Bijvoorbeeld door spullen te geven. Ook zijn er verschillende initiatieven om mensen (tijdelijk) in huis te nemen of onderdak te bieden. Lees hier wat u kunt doen als u mee wilt helpen."
-    },
-	
-    {
-      title : "Helping to Leave",
-      url: "https://helpingtoleave.org/en",
-      qrimg: "qr/helpingtoleave.png",
-      descr: "Helping to Leave is an independent grassroots project supporting people who are in the process of leaving Ukraine, as well as those currently in the country and in need of help."
-    },
-    {
-      title : "Come back alive",
-      url: "https://www.comebackalive.in.ua/",
-      qrimg: "qr/comebackalive.png",
-      descr: "Defending Ukraine Together"
-    },
-    {
-      title : "GIRO 555",
-      url: "https://giro555.nl/actions/oekraine/",
-      qrimg: "qr/giro555.png",
-      descr: "De mensen uit Oekraïne hebben dringend hulp nodig. Honderdduizenden mensen zijn op de vlucht. Gezinnen zijn van elkaar gescheiden. Zij leven in angst en onzekerheid maar wij kunnen helpen. Met voeding, onderdak, medische zorg en schoon drinkwater. Jij kunt ook helpen. Samen in actie voor Oekraïne. Geef jij ook?"
-    },
-    {
-      title : "INTERNATIONAL COMMITTEE OF THE RED CROSS",
-      url: "https://www.icrc.org/en/donate/ukraine",
-      qrimg: "qr/redcross.png",
-      descr: "As the security situation allows, the ICRC is responding to urgent humanitarian needs and must be able to continue their life saving work. ICRC water engineers and doctors aim to help more than 3 million people access clean water and improve the living conditions of more than 66,000 whose homes have been damaged by heavy fighting."
-    }
-    
-    
-  ];
-
-    var str = data.map(function(v){
-      return `
-    	
-	
-	<div class="row">
-        <div class="col-sm-12 border rounded mb-4">
-            <div class="list-item ">
-                <div class="list-image">
-                    <a target="_blank" href="${v.url}"><!--${v.qrimg}-->
-                        <img src="${v.qrimg}" alt="${v.title}" width="300" height="300"></a>
-                </div>
-                <div class="list-info align-items-stretch">
-
-                    <h3><a target="_blank" href="${v.url}">${v.title}</a></h3> 
-					<p>${v.descr}</p>
-					
-                </div>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBEMH47XPZ"></script>
+	  <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  
+	  gtag('config', 'G-EBEMH47XPZ');
+	  </script>
+   </head>
+   <body>
+      <div class="col-lg-8 mx-auto p-3 py-md-5">
+         <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/510px-Flag_of_Ukraine.svg.png"  class="me-2"  width="40" height="32">
+            <span class="fs-4">Support-Ukraine.nl</span>
+            </a>
+         </header>
+         <main>
+            <p class="fs-5 col-md-8 d-print-none">
+               We have been regularly asked by friends and acquaintances about the best ways to support Ukraine and Ukrainian people in the war. <br>
+               We have therefore collected the list of trustful non-commercial organizations where one can donate money, medications, humanitarian goods or provide other forms of support.<br>
+               We are not affiliated with any of the below mentioned organizations, neither we receive any contributions from them. We ask you to conduct your own research and make your own decisions.
+			   <br><br>
+			   We have included QR codes for every resource so it is easy to print out and distribute a hard copy. 
+            </p>
+            <div class="mb-5 d-print-none">
+               <a href="#" onclick="print()" class="btn btn-primary btn-lg px-4">Print</a>
             </div>
-        </div>
-    </div>
-	
-	`;
-    });
-    document.getElementById('links').innerHTML = str.join("");
-    </script>
-	
-  </main>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-      
-  </body>
+            <links id="links"></links>
+            <script>
+               var data = [
+               {
+                 title : "Stichting Oekraïners in Nederland",
+                 url: "https://www.ukrainians.nl/",
+                 qrimg: "qr/ukrainians.nl.png",
+                 descr: "Ukrainians in the Netherlands Foundation (Stichting Oekraïners in Nederland) is a non-profit platform established in 2014 to support the needs of the Dutch Ukrainian diaspora, provide humanitarian aid to Ukraine, particularly in the occupied territories. Our foundation works closely with the Ukrainian Embassy in the Netherlands."
+               },
+               {
+                 title : "Rijksoverheid: hulp aan vluchtelingen uit Oekraïne",
+                 url: "https://www.rijksoverheid.nl/onderwerpen/opvang-vluchtelingen-uit-oekraine/wat-kan-ik-doen",
+                 qrimg: "qr/rijksoverheid.png",
+                 descr: "Veel Nederlanders willen een bijdrage leveren om vluchtelingen uit Oekraïne te helpen. Bijvoorbeeld door spullen te geven. Ook zijn er verschillende initiatieven om mensen (tijdelijk) in huis te nemen of onderdak te bieden. Lees hier wat u kunt doen als u mee wilt helpen."
+               },
+               
+               {
+                 title : "Helping to Leave",
+                 url: "https://helpingtoleave.org/",
+                 qrimg: "qr/helpingtoleave.png",
+                 descr: "Helping to Leave is an independent grassroots project supporting people who are in the process of leaving Ukraine, as well as those currently in the country and in need of help."
+               },
+               {
+                 title : "Come back alive",
+                 url: "https://www.comebackalive.in.ua/",
+                 qrimg: "qr/comebackalive.png",
+                 descr: "Come Back Alive (Ukrainian: Повернись живим) is a Ukrainian non-governmental organization that emerged to help the Ukrainian military during the War in Donbas on the basis of crowdfunding, and continued to help the Ukrainian military during the 2022 Russian invasion of Ukraine. It is one of the biggest organizations working in this area,[1][2][3] and specializes in technical support, especially in thermographic cameras and night vision devices."
+               },
+               {
+                 title : "GIRO 555",
+                 url: "https://giro555.nl/actions/oekraine/",
+                 qrimg: "qr/giro555.png",
+                 descr: "De mensen uit Oekraïne hebben dringend hulp nodig. Honderdduizenden mensen zijn op de vlucht. Gezinnen zijn van elkaar gescheiden. Zij leven in angst en onzekerheid maar wij kunnen helpen. Met voeding, onderdak, medische zorg en schoon drinkwater. Jij kunt ook helpen. Samen in actie voor Oekraïne. Geef jij ook?"
+               },
+               {
+                 title : "INTERNATIONAL COMMITTEE OF THE RED CROSS",
+                 url: "https://www.icrc.org/en/donate/ukraine",
+                 qrimg: "qr/redcross.png",
+                 descr: "As the security situation allows, the ICRC is responding to urgent humanitarian needs and must be able to continue their life saving work. ICRC water engineers and doctors aim to help more than 3 million people access clean water and improve the living conditions of more than 66,000 whose homes have been damaged by heavy fighting."
+               }
+               ];
+               
+               var str = data.map(function(v){
+                 return `
+               	
+               
+               <div class="row">
+                   <div class="col-sm-12 border rounded mb-4">
+                       <div class="list-item ">
+                           <div class="list-image">
+                               <a target="_blank" href="${v.url}"><!--${v.qrimg}-->
+                                   <img src="${v.qrimg}" alt="${v.title}" width="300" height="300"></a>
+                           </div>
+                           <div class="list-info align-items-stretch">
+                               <h3><a target="_blank" href="${v.url}">${v.title}</a></h3> 
+               	<p>${v.descr}</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               `;
+               });
+               document.getElementById('links').innerHTML = str.join("");
+            </script>
+         </main>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   </body>
 </html>
